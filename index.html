@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--icons lab-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+       <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- BS css file -->
+    <link rel="stylesheet" href="css/BS-min.css">
+
+     <!-- Demo styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 5rem;
+      margin-top: 5rem;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 10px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 3rem;
+      border-radius: 2rem;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      height: auto;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+    <title>Rolax</title>
+</head>
+<body>
+    <main style="min-height: 100vh;">
+        <div class="container">
+            <div class="header">
+                <div class="header-left">
+                    <h4>ROLAX</h4>
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Featured</a>
+                        <a href="#">Products</a>
+                        <a href="#">New</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <i class="fa-regular fa-moon"style="cursor: pointer;"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i style="cursor: pointer;" class="fa-solid fa-bars bar d-lg-none d-sm-block"></i>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="content">
+                    <h1>NEW WATCH<br>COLLECTION B720</h1>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, placeat eaque fugit vero tempora,<br> corrupti nobis autem nulla doloribus voluptatum nemo accusamus quasi magnam cum obcaecati sapiente<br>, deserunt ad aperiam?</P>
+                    <h3>1250$</h3>
+                    <div class="buttons">
+                    <a href="#" class="dis">Discover</a>
+                    <a href="#">ADD TO CART</a>
+                    <!-- <button onclick="productNumber(num)">apply</button> -->
+                </div>
+                    </div>
+                    <div class="prod">
+                        <img src="img/prod.png" alt="">
+                    </div>
+            </div>
+            <div class="justify-content-sm-center justify-content-md-around justify-content-between" style="display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;margin-top: 8rem;gap: 3rem;">
+              <div class="rol-pic" style="flex-grow: 1;position: relative; width:300px;height:auto;">
+                <img  style="object-fit: cover;width: 100%;height: 100%;" src="img/featured1.png" alt="featured1">
+                <div  class="dec">
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">shop now</a>
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">learn more</a>
+                </div>
+              </div>
+              <div class="rol-pic" style="flex-grow: 1; position: relative; width:300px;height:auto;">
+                <img  style="object-fit: cover;width: 100%;height: 100%;" src="img/featured3.png" alt="featured3">
+                <div  class="dec">
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">shop now</a>
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">learn more</a>
+                </div>
+              </div>
+              <div class="rol-pic" style="flex-grow: 1; position: relative; width:300px;height:auto;">
+                <img  style="object-fit: cover; width: 100%;height: 100%;" src="img/new2.png" alt="new2">
+                <div  class="dec">
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">shop now</a>
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">learn more</a>
+                </div>
+              </div>
+              <div class="rol-pic" style="flex-grow: 1; position: relative; width:300px;height:auto;">
+                <img  style="object-fit: cover;width: 100%;height: 100%;" src="img/new3.png" alt="new2">
+                <div  class="dec">
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">shop now</a>
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">learn more</a>
+                </div>
+              </div>
+              <div class="rol-pic" style="flex-grow: 1; position: relative; width:300px;height:auto;">
+                <img  style="object-fit: cover;width: 100%;height: 100%;" src="img/new4.png" alt="new4">
+                <div  class="dec">
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">shop now</a>
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">learn more</a>
+                </div>
+              </div>
+              <div class="rol-pic" style="flex-grow: 1; position: relative; width:300px;height:auto;">
+                <img style="object-fit: cover;width: 100%;height: 100%;" src="img/product2.png" alt="product2">
+                <div  class="dec">
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">shop now</a>
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">learn more</a>
+                </div>
+              </div>
+              <div class="rol-pic" style="flex-grow: 1; position: relative; width:300px;height:auto;">
+                <img  style="object-fit: cover;width: 100%;height: 100%;flex-grow: 1;" src="img/product3.png" alt="product3">
+                <div  class="dec">
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">shop now</a>
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">learn more</a>
+                </div>
+              </div>
+              <div class="rol-pic"  style="flex-grow: 1; position: relative; width:300px;height:auto;">
+                <img style="object-fit: cover;width: 100%;height: 100%;" src="img/product4.png" alt="product4">
+                <div  class="dec">
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">shop now</a>
+                  <a style="padding: 1rem 2rem;border-radius: 1rem;background-color: #fff;color: #000;text-decoration: none;" href="#">learn more</a>
+                </div>
+        </div>
+    </main>
+
+    <section id="sw-sec" style="width: 100%; min-height: 100vh;padding: 5rem;" class="cards">
+        <div class="title d-flex justify-content-center align-items-center flex-column gap-5">
+         <h6 style="color: #7E76F9; font-size: 2rem;">Shopping</h6>
+         <h3 style="color: #42495B; font-size: 3rem;">Our Products</h3>
+        </div>
+        <div class="container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+        <img style="width: 100%;height: auto;object-fit: cover;" src="img/rol1.png" alt="rolex">
+                <p style="color: #7A839E; font-size: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                <h5 style="color: #1000FF; font-size: 2.5rem;">$ 140</h5>
+                <a style="padding: 1rem 2rem; background-color: transparent; border: 1px solid #1000FF;font-size: 1.6rem; border-radius: 2rem; color: #42495B;" href="#">See Details</a>
+              </div>
+              <div class="swiper-slide">
+        <img style="width: 100%;height: auto;object-fit: cover;" src="img/rol2.png" alt="rolex">
+                <p style="color: #7A839E; font-size: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                <h5 style="color: #1000FF; font-size: 2.5rem;">$ 140</h5>
+                <a style="padding: 1rem 2rem; background-color: #6156F9; font-size: 1.6rem; border-radius: 2rem;color: #fff;" href="#">See Details</a>
+              </div>
+              <div class="swiper-slide">
+                 <img style="width: 100%;height: auto;object-fit: cover;" src="img/rol3.png" alt="rolex">
+                <p style="color: #7A839E; font-size: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                <h5 style="color: #1000FF; font-size: 2.5rem;">$ 140</h5>
+                <a style="padding: 1rem 2rem; background-color: transparent; border: 1px solid #1000FF;font-size: 1.6rem; border-radius: 2rem; color: #42495B;" href="#">See Details</a>
+              </div>
+              <div class="swiper-slide">
+        <img style="width: 100%;height: auto;object-fit: cover;" src="img/rol4.png" alt="rolex">
+                <p style="color: #7A839E; font-size: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                <h5 style="color: #1000FF; font-size: 2.5rem;">$ 140</h5>
+                <a style="padding: 1rem 2rem; background-color: transparent; border: 1px solid #1000FF;font-size: 1.6rem; border-radius: 2rem; color: #42495B;" href="#">See Details</a>
+              </div>
+              <div class="swiper-slide">
+        <img style="width: 100%;height: auto;object-fit: cover;" src="img/rol5.png" alt="rolex">
+                <p style="color: #7A839E; font-size: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                <h5 style="color: #1000FF; font-size: 2.5rem;">$ 140</h5>
+                <a style="padding: 1rem 2rem; background-color: #6156F9; font-size: 1.6rem; border-radius: 2rem;color: #fff;" href="#">See Details</a>
+              </div>
+              <div class="swiper-slide">
+                 <img style="width: 100%;height: auto;object-fit: cover;" src="img/rol6.png" alt="rolex">
+                <p style="color: #7A839E; font-size: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                <h5 style="color: #1000FF; font-size: 2.5rem;">$ 140</h5>
+                <a style="padding: 1rem 2rem; background-color: transparent; border: 1px solid #1000FF;font-size: 1.6rem; border-radius: 2rem; color: #42495B;" href="#">See Details</a>
+              </div>
+              <div class="swiper-slide">
+        <img style="width: 100%;height: auto;object-fit: cover;" src="img/rol7.png" alt="rolex">
+                <p style="color: #7A839E; font-size: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                <h5 style="color: #1000FF; font-size: 2.5rem;">$ 140</h5>
+                <a style="padding: 1rem 2rem; background-color: transparent; border: 1px solid #1000FF;font-size: 1.6rem; border-radius: 2rem; color: #42495B;" href="#">See Details</a>
+              </div>
+              <div class="swiper-slide">
+        <img style="width: 100%;height: auto;object-fit: cover;" src="img/rol8.png" alt="rolex">
+                <p style="color: #7A839E; font-size: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                <h5 style="color: #1000FF; font-size: 2.5rem;">$ 140</h5>
+                <a style="padding: 1rem 2rem; background-color: #6156F9; font-size: 1.6rem; border-radius: 2rem;color: #fff;" href="#">See Details</a>
+              </div>
+              <div class="swiper-slide">
+                 <img style="width: 100%;height: auto;object-fit: cover;" src="img/rol9.png" alt="rolex">
+                <p style="color: #7A839E; font-size: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                <h5 style="color: #1000FF; font-size: 2.5rem;">$ 140</h5>
+                <a style="padding: 1rem 2rem; background-color: transparent; border: 1px solid #1000FF;font-size: 1.6rem; border-radius: 2rem; color: #42495B;" href="#">See Details</a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          </div>
+          </section>
+
+          <footer id="footer">
+            <div class="container">
+                <p>Copyright © 2023 All rights reserved | made by<span>MunirAlghariz</span></p>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0:{
+          slidesPerView: 1,
+          spaceBetween: 20,  
+      },
+      992:{
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      }
+    }
+  });
+</script>
+
+<!-- header js file -->
+<script src="js/header.js"></script>
+
+<!-- dark mode js file -->
+<script src="js/darkmode.js"></script>
+</body>
+</html>

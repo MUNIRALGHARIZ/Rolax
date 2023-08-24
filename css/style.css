@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+}
+main .container{
+    width: 80%;
+    height: 100%;
+    margin: 1rem auto;
+}
+main .container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .header .header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+main .container .header .header-left h4{
+    font-size: 25px;
+    font-weight: 400;
+}
+main .container .header .header-left nav{
+    display: flex;
+    gap: 2rem;
+}
+main .container .header .header-left nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #333;
+    transition: .5s;
+}
+main .container .header .header-left nav a:hover{
+    color: gold;
+}
+main .container .header .header-left nav a:nth-child(1){
+    color: gold;
+}
+main .container .header .header-right{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 1rem;
+}
+main .container .header .header-right .bar{
+    display: none;
+}
+@media (max-width:1000px){
+    main .container .header .header-left nav{
+        display: none;
+    }
+    main .container .header{
+        position: relative;
+    }
+    main .container .header .header-left nav.active{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        background-color: blanchedalmond;
+        border-radius: 1.5rem;
+        padding: 2rem;
+        border: 1px solid black;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem;
+    }
+    main .container .header .header-left nav.active a{
+        border-radius: 5rem;
+        padding: 2rem;
+        display: inline-block;
+        width: 100%;
+        border: 1px solid black;
+    }
+    main .container .header .header-left nav a:nth-child(1){
+        color: unset;
+    }
+    main .container .header .header-right .bar{
+        display: block;
+    }
+}
+main .container .hero{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+main .container .hero .content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+main .container .hero .content h1{
+   font-weight: bold;
+   font-size: 60px;
+   color: #333;
+}
+main .container .hero .content p{
+   font-weight: 500;
+   font-size: 20px;
+   color: grey;
+}
+main .container .hero .content h3{
+    color: gold;
+    font-size: 30px;
+    font-weight: bold;
+}
+main .container .hero .content .buttons{
+    display: flex;
+    gap: 0;
+}
+main .container .hero .content .buttons a:nth-child(1){
+    font-size: 20px;
+    font-weight: normal;
+    background-color: silver;
+    color: #333;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    transition: .5s;
+}
+main .container .hero .content .buttons a:nth-child(1):hover{
+    background-color: #333;
+    color: #fff;
+}
+main .container .hero .content .buttons a:nth-child(2){
+    font-size: 20px;
+    font-weight: normal;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    transition: .5s;
+}
+main .container .hero .prod{
+    background-color: darkgoldenrod;
+    padding: 1rem 2rem;
+}
+main .container .hero .content .buttons a:nth-child(2):hover{
+    background-color: silver;
+    color: #333;
+}
+@media(max-width:975px){
+    main .container .hero{
+        flex-direction: column-reverse;
+    }
+    main .container .hero .prod img{
+        height: 350px;
+        width: 250px;
+        object-fit: cover;
+    }
+    main .container .hero .content h1{
+        font-size: 30px;
+    }
+    main .container .hero .content .buttons a{
+        margin-bottom: 1rem;
+        padding: 1rem 1rem;
+    }
+}
+
+/* start footer section */
+footer{
+    width: 100%;
+    min-height: 10vh;
+    background-color: azure;
+    padding: 3rem;
+}
+footer .container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+footer .container h4{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+}
+footer .container p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: silver;
+}
+footer .container p span{
+    color: orange;
+}
+footer .container .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+footer .container .social a{
+    color:#333
+}
+/* end footer section */
+.rol-pic{
+    position: relative;
+}
+.dec{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    bottom: 0%;
+    right: 0%;
+    background-color: darkblue;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: none;
+}
+.rol-pic:hover .dec{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    animation: move 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move{
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: 0%;
+    }
+}
